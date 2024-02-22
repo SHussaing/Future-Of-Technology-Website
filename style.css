@@ -1,0 +1,487 @@
+/*All colors used for website*/
+:root {  
+    --blacktext: #0D0F11;
+    --lightblue: #299CF7;
+    --darkblue: #094CA6;
+    --brightgray: #E7EAEE;
+    --silver: #D0D5DD;
+}
+
+/*Styling for all pages starts here*/
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background-color: var(--brightgray); 
+    margin: 0;
+    padding: 0;
+    
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--silver);
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#logo img {
+    height: 100px;
+    width: 100px;
+}
+
+#navigation li{
+    display: inline;
+    padding: 0 30px;
+    font-size: 22px;
+}
+
+.links {
+    text-decoration: none;
+    color:var(--blacktext);
+    text-underline-offset: 0.25em;
+    font-weight: bold;
+}
+
+.links:hover {
+    color:var(--lightblue);
+}
+
+#active-page{
+    text-decoration: underline var(--lightblue);
+    color:var(--lightblue);
+}
+
+#register-now {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+#register-now:hover{
+    color: var(--lightblue);
+    cursor: pointer;
+}
+
+#user-info {
+    align-self: flex-start;
+    width: 13%;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--blacktext);
+    /* Limits the broswer to show only 2 lines In case of a very long name inputted by the user */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#footer{
+    background-color: var(--silver);
+    color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-top: 100px;
+}
+
+#footer ul {
+    margin: 10px;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+    padding-left: 20px;
+}
+#footer li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+.footer-links:hover {
+    color: var(--lightblue);
+}
+
+#socials{
+    display: flex;
+}
+
+#copyright{
+    text-align: right;
+    color: var(--blacktext);
+}
+
+h1 {
+    text-align: center;
+}
+
+#intext-links {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blacktext);
+}
+
+#intext-links:hover {
+    color: var(--lightblue);
+}
+/*Styling for all pages ends here*/
+
+/*Styling for Home page Starts Here*/
+#hero-image{
+    Background: url(images/hero.png) no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#hero-content{
+    margin-left: 200px;
+    margin-bottom: 125px;
+    width: 840px;
+    color: var(--brightgray);
+}
+
+#home-title{
+    font-size: 28px;
+    color: var(--brightgray);
+}
+
+#hero-text{
+    font-size: 19px;
+}
+
+.register-button{
+    color: var(--brightgray);
+    background-color: var(--lightblue);
+    height: 60px;
+    width: 264px;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.register-button:hover {
+    cursor: pointer;
+}
+
+#topics{
+    margin-top: 70px;
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.topic {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.topic-title{
+    color: var(--darkblue);
+    font-size: 28px;
+    
+}
+.images {
+    width: 525px;
+    height: 400px;
+}
+
+.topic-overview{
+    color:var(--blacktext);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5em;  
+}
+
+.home-buttons{
+    color: var(--brightgray);
+    background-color: var(--darkblue);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size:18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.home-buttons:hover{
+    cursor:pointer;
+}
+
+#register{ 
+    margin-top: 100px;
+}
+
+#register h2{
+    color: var(--darkblue);
+    text-align: center;
+    margin-top: 20px;
+}
+
+form{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+label, input {
+    margin: 10px;
+}
+
+label {
+    color: var(--darkblue);
+    font-weight: 600;
+    font-size: 22px;
+    justify-self: flex-start;
+} 
+
+input {
+    width: 360px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: var(--brightgray);
+    border: 2px solid var(--darkblue);
+    color: var(--blacktext);
+}
+
+input:focus {
+    outline: none
+}
+
+::placeholder {
+    color: grey;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+#register-message{
+    color: var(--lightblue);
+    font-size: 22px;
+    width: fit-content;
+    /* width: 316.73px; */
+    height: 27px;
+}
+/*Styling for Home page ends Here*/
+
+
+/*Styling for Topic Pages starts Here*/
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topic-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    width: 65%;
+}
+.video{
+    width: 1450px;
+    height: 720px;
+}
+
+.main-title{
+    color: var(--darkblue);
+    font-size: 55px;
+}
+
+.image-title{
+    color: var(--darkblue);
+    font-size: 28px;
+}
+
+.image-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* not image but section */
+.text-image-container{
+    margin-left: 20px;
+}
+
+.blue-text{
+    color: var(--darkblue)
+}
+
+.general-text{
+    font-size: 23px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/*Styling for Topic Pages ends Here*/
+
+/*Styling for making of website starts here*/
+
+/* Code Reference */
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* Slideshow container */
+.slideshow-container {
+    width: 1450px; 
+    height: 720px; 
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .mockup-image{
+      height: 720px;
+      width: 1450px;
+      border: 1px var(--darkblue) solid;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--blacktext);
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: var(--lightblue);
+  }
+  
+  .slide-text {
+    color: var(--darkblue);
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .number-text {
+    color: var(--blacktext);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--silver);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--lightblue);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+#making-image{
+    width: 100%;
+    margin-bottom: 30px; 
+    height: 700px;
+}
+
+.justification, .story{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+}
+
+.justification-image{
+    /* width: 525px;
+    height: 400px; */
+    margin-left: 30px;
+}
+
+/*Styling for our story starts here*/
+#story-image {
+    width: 1450px;
+    height: 720px;
+}
+
+#report h1{
+    color: var(--darkblue);
+    font-size: 40px; 
+    margin-bottom: 100px;
+}
+
+#report {
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Styling for our story ends here*/
+
+/* for laptops */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .topic-title{
+        font-size: 25px;
+    }
+    .topic-overview{
+        font-size: 17px;
+    }
+    .general-text{
+        font-size: 20px;
+    }
+    .topic-content{
+        width: 80%;
+    }
+    .justification, .story{
+        width: 85%;
+    }
+}

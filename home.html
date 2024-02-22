@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Resolution is: 1920 x 1080 -->
+<!-- Students names and Ids:  -->
+<!-- Sayed Husain Mahfoodh 202102147 -->
+<!-- Hasan Mohamed 202101277-->
+<!-- Alsayed Hafeedh 202202448 -->
+<head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of technology</title>
+</head>
+
+<body onload="getData()">
+
+    <div id="header">
+
+        <div id="logo">
+            <a href="home.html"><img src="images/logo.png" alt="website logo"></a>
+        </div>
+
+        <div id="navigation">
+            <ul>
+                <li><a href="home.html" class="links" id="active-page">Home</a></li>
+                <li><a href="AI.html" class="links">Artificial Intelligence</a></li>
+                <li><a href="VR.html" class="links">Virtual Reality</a></li>
+                <li><a href="robots.html" class="links">Robots</a></li>
+                <li><a href="making-of.html" class="links">Making of Website</a></li>
+                <li><a href="our_story.html" class="links">Our Story</a></li>
+            </ul>
+        </div>
+
+        <p id="user-info"><a id="register-now" href="home.html#register"></a></p>
+
+    </div>
+
+    <div id="hero-image">
+        <div id="hero-content">
+            <div id="home-title">
+                <h1>Future of Information Technology</h1>
+            </div>
+            
+            <p id="hero-text">Information Technology is the main driver behind innovation, and without innovations,
+                companies will not survive because they are the wave of the future. The digital revolution has created
+                countless benefits for all businesses and kept them profitable.</p>
+            <button class="register-button" onclick="location.href='#register'" type="button">Register Now</button>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div id="topics">
+            <div class="topic">
+                <div class="topic-title">
+                    <h2>Artificial Intelligence</h2>
+                </div>
+                <img src="images/AI1.png" alt="Artificial Intelligence Image" class="images">
+                <p class="topic-overview">AI is the ability of a machine to display human-like capabilities such as
+                    reasoning, learning, planning and creativity.
+                    AI enables technical systems to perceive their environment, deal with what they perceive, solve
+                    problems and act to achieve a specific goal. The computer receives data, processes it and responds.
+                    AI systems are capable of adapting their behaviour to a certain degree by analysing the effects of
+                    previous actions and working autonomously.</p>
+                <button class="home-buttons" onclick="location.href='AI.html'" type="button">Read More</button>
+            </div>
+            <div class="topic">
+                <div class="topic-title">
+                    <h2>Virtual Reality</h2>
+                </div>
+                <img src="images/VR1.png" alt="Virtual Reality Image" class="images">
+                <p class="topic-overview">Virtual reality is a simulated 3D environment that enables users to explore
+                    and interact with a virtual surrounding in a way that approximates reality, as it is perceived
+                    through the users' senses. The environment is created with computer hardware and software, although
+                    users might also need to wear devices such as helmets or goggles to interact with the environment.
+                    The more deeply users can immerse themselves in a VR environment .</p>
+                <button class="home-buttons" onclick="location.href='VR.html'" type="button">Read More</button>
+            </div>
+            <div class="topic">
+                <div class="topic-title">
+                    <h2>Robots</h2>
+                </div>
+                <img src="images/Robot1.png" alt="Robots Image" class="images">
+                <p class="topic-overview">Robots the term that have always been associated with the future and future of
+                    technology. However, the elementary and rough ideas and conceptualization of robots dates to 1940s ,
+                    and since then it has been evolving and updating with years, until it has been one of the
+                    controversial topics nowadays because of the expected effects. So, what are robots & robotics? How
+                    do we use them currently? And how will it change our life in the future? </p>
+                <button class="home-buttons" onclick="location.href='robots.html'" type="button">Read More</button>
+            </div>
+        </div>
+
+        <div id="register">
+            <div class="topic-title">
+                <h2>Register Your Interest</h2>
+            </div>
+            <form id="myform">
+                <label for="first_name">First name: </label>
+                <input type="text" name="first_name" id="first_name" placeholder="e.g. John">
+
+                <label for="last_name">Last name: </label>
+                <input type="text" name="last_name" id="last_name" placeholder="e.g. Doe">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="e.g name@example.com">
+
+                <label for="phone_number">Phone Number: </label>
+                <input type="number" name="phone" id="phone_number" placeholder="e.g 36620300">
+                <input type="button" class="home-buttons" value="Register" onclick="saveData()">
+                <p id="register-message"></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li><a href="#" class="footer-links">Privacy Policy</a></li>
+            <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+        </ul>
+        <div>
+            <div id="social">
+                <a href="#"><img src="images/instagram.png" alt="instagram logo" class="icon"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter logo" class="icon"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook logo" class="icon"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube logo" class="icon"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp logo" class="icon"></a>
+            </div>
+            <p id="copyright">Copyright © 2022 WebFund, Inc.</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

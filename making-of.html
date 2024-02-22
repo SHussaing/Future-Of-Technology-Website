@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of technology</title>
+
+</head>
+
+<body onload="getData()">
+
+    <div id="header">
+        <div id="logo">
+            <a href="home.html"><img src="images/logo.png" alt="website logo"></a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="home.html" class="links">Home</a></li>
+                <li><a href="AI.html" class="links">Artificial Intelligence</a></li>
+                <li><a href="VR.html" class="links">Virtual Reality</a></li>
+                <li><a href="robots.html" class="links">Robots</a></li>
+                <li><a href="making-of.html" class="links" id="active-page">Making of Website</a></li>
+                <li><a href="our_story.html" class="links">Our Story</a></li>
+            </ul>
+        </div>
+        <p id="user-info"><a id="register-now" href="home.html#register"></a></p>
+    </div>
+    <div id="content">
+
+        <h1 class="main-title">Mock-up Images</h1>
+        <!-- Code Reference -->
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="number-text">1 / 4</div>
+                <img src="Images/homeMock.png" class="mockup-image" alt="home page mock image">
+                <div class="slide-text">Home Page</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">2 / 4</div>
+                <img src="Images/topicMock.png" class="mockup-image" alt="topic pages mock image">
+                <div class="slide-text">Topic Page</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">3 / 4</div>
+                <img src="Images/makingMock.png" class="mockup-image" alt="making-of website page mock image">
+                <div class="slide-text">Making of Website</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">4 / 4</div>
+                <img src="Images/ourstoryMock.png" class="mockup-image" alt="our_story page mock image">
+                <div class="slide-text">Our Story</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+        <div class="justification">
+            <div class="justifytext">
+                <h3 class="topic-title">Justification 1: Color</h3>
+                <p class="general-text">
+                    Since our topic is about technology and how it will change our world, we tried to find a color
+                    palette that suits the topic. In our research, we found that that that most tech companies use blue
+                    in much higher rate in their logo and designs, followed by white, black and red. Additionally we
+                    found that they use blue because it invokes stability and security and it represents intelligence
+                    and trustworthiness, which makes them instantly establish credibility and authority with the client.
+                    So we tried to make our color palette a blue based one, with one dark and two light colors.
+                </p>
+            </div>
+            <img src="images/justify1.png" alt="Colors" class="justification-image images">
+        </div>
+        <div class="justification">
+            <div class="justifytext">
+                <h3 class="topic-title">Justification 2: Layout and structure</h3>
+                <p class="general-text">
+                    For our design and layout, we thought to use a minimal website design such as float design with each
+                    section/paragraph is considered as a standalone section that it is in a div in its on. The main
+                    advantage of using this type of design is the flexibility and ease of using the website content
+                    regardless of the screen size.Additionally, we tried to rely on repeating items or repeating groups.
+                    Besides that, they are followed in modern designs. The consistency they give, gives the user kind of
+                    a roadmap on how to use the website and navigate easily.
+                </p>
+            </div>
+            <img src="images/justify2.png" alt="Web Structure" class="justification-image images">
+        </div>
+        <div class="justification">
+            <div class="justifytext">
+                <h3 class="topic-title">Justification 3: Code: Flex</h3>
+                <p class="general-text">
+                    Flex (flexibility), one of relatively newest techniques in CSS. It basically depends on flexibility
+                    and availability of spaces when setting the height and widths of an element. Additionally, it is
+                    very useful for responsive websites designs because it depends on the availability, which in future,
+                    can help this website to be responsive. Finally, it allows us to order and alter the items easily.
+                    Because of this we thought it would be a great choice for our website.
+                </p>
+            </div>
+            <img src="images/justify3.png" alt="CSS Logo" class="justification-image images">
+        </div>
+        <div class="justification">
+            <div class="justifytext">
+                <h3 class="topic-title">Justification 4: Code: JavaScript</h3>
+                <p class="general-text">JavaScript is the best way to program any website. By using the Local Storage
+                    function in JavaScript we are able to display the user’s first name and last name as soon as he
+                    clicks on the Register button. In addition to that we have used JavaScript in the slideshow you have
+                    seen above containing all the mock-up images we have created for the website. JavaScript has allowed
+                    us to make our website more user-friendly and without a doubt this will encourage the user to re-use
+                    it.
+                </p>
+            </div>
+            <img src="images/justify4.png" alt="JS Logo" class="justification-image images">
+        </div>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li><a href="#" class="footer-links">Privacy Policy</a></li>
+            <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+        </ul>
+        <div>
+            <div id="social">
+                <a href="#"><img src="images/instagram.png" alt="instagram logo" class="icon"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter logo" class="icon"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook logo" class="icon"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube logo" class="icon"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp logo" class="icon"></a>
+            </div>
+            <p id="copyright">Copyright © 2022 WebFund, Inc.</p>
+        </div>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>
